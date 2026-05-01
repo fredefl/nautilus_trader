@@ -766,8 +766,9 @@ impl CoinbaseIntxFeedHandler {
                                 CoinbaseIntxWsMessage::CandleUpdate(_) => continue, // Ignore
                             },
                             Err(e) => {
-                                log::error!("Failed to parse message: {e}: {text}");
-                                break;
+                                //log::error!("Failed to parse message: {e}: {text}");
+                                //break;
+                                continue;
                             }
                         }
                     }
