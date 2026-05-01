@@ -188,7 +188,7 @@ pub fn parse_instrument_any(
             );
             Ok(None)
         }
-        CoinbaseIntxInstrumentType::Equity_Etf => {
+        CoinbaseIntxInstrumentType::EquityEtf => {
             log::warn!(
                 "Equity instrument parsing not implemented {}",
                 instrument.product_id,  
