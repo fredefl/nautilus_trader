@@ -372,6 +372,8 @@ pub enum CoinbaseIntxInstrumentType {
     Perp,
     /// Index products.
     Index,
+    /// Equity products.
+    Equity,
 }
 
 /// Represents an asset status on Coinbase International.
