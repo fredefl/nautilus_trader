@@ -178,6 +178,7 @@ pub fn parse_instrument_any(
             parse_perp_instrument(instrument, None, None, None, None, ts_init).map(Some)
         }
         CoinbaseIntxInstrumentType::Index => Ok(None), // Not yet implemented
+        CoinbaseIntxInstrumentType::Equity => Ok(None), // Not yet implemented
     };
 
     match result {

@@ -181,6 +181,13 @@ pub fn parse_instrument_any(
             );
             Ok(None)
         }
+        CoinbaseIntxInstrumentType::Equity => {
+            log::warn!(
+                "Equity instrument parsing not implemented {}",
+                instrument.product_id,
+            );
+            Ok(None)
+        }
     };
 
     match result {
