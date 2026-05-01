@@ -179,6 +179,7 @@ pub fn parse_instrument_any(
         }
         CoinbaseIntxInstrumentType::Index => Ok(None), // Not yet implemented
         CoinbaseIntxInstrumentType::Equity => Ok(None), // Not yet implemented
+        CoinbaseIntxInstrumentType::Equity_Etf => Ok(None), // Not yet implemented
     };
 
     match result {
