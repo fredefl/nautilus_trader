@@ -376,6 +376,8 @@ pub enum CoinbaseIntxInstrumentType {
     Equity,
     /// Equity ETF products.
     EquityEtf,
+    /// Commodities
+    Commod,
 }
 
 /// Represents an asset status on Coinbase International.

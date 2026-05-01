@@ -195,7 +195,13 @@ pub fn parse_instrument_any(
             );
             Ok(None)
         }
-        
+        CoinbaseIntxInstrumentType::Commod => {
+            log::warn!(
+                "Commodities instrument parsing not implemented {}",
+                instrument.product_id,  
+            );
+            Ok(None)
+        }
     };
 
     match result {
